@@ -108,3 +108,8 @@ footer {
   padding: 5px;
   box-sizing: border-box;
 }
+.zap{
+  width: 110px;
+  height: 110px;
+  margin-left: 1%;
+}

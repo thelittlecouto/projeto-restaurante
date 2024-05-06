@@ -23,25 +23,18 @@
     </div>
   </header>
 
-  <section id="reservation" class="section">
-    <div class="container">
-      <h2>Reserva</h2>
-      <label for="inputDate">Digite a data da reserva:</label>
-      <input type="date" id="inputDate">
-      <button onclick="generateCalendar()">Visualizar Calendário</button>
-      <div id="calendar"></div> <!-- Container para o calendário -->
-    </div>
-  </section>
-
   <section id="menu" class="section">
     <div class="container">
       <h2>Menu</h2>
       <p>Veja nossa seleção de pratos italianos autênticos.</p>
       <div class="menu-items">
         <div class="menu-item">
-          <h3>Spaghetti à Bolonhesa</h3>
+          <h3>Lasanha à bolonhesa</h3>
+          <div class="col-sm">
+            <img src="img/Lasanha à bolonhesa com fonduta de grana padano, um dos carros-chefes da casa.webp " height="200" width="240">
+          </div>
           <p>R$ 25.00</p>
-          <button onclick="addToCart('Spaghetti à Bolonhesa', 25)">Adicionar ao Carrinho</button>
+          <button onclick="addToCart('Lasanha à Bolonhesa', 25)">Adicionar ao Carrinho</button>
         </div>
         <div class="menu-item">
           <h3>Pizza Margherita</h3>
@@ -57,6 +50,11 @@
     <div class="container">
       <h2>Contato</h2>
       <p>Entre em contato conosco para reservas ou perguntas.</p>
+      <a target="_blank" href="https://web.whatsapp.com//5521989891256"><img class="zap" src="img/zap.png" alt=""></a>
+      <div class="footer-social">
+        <a href="#" class="social-icons"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="social-icons"><i class="fa fa-instagram"></i></a>
+      </div>
       <!-- Adicione aqui as informações de contato -->
     </div>
   </section>
@@ -64,7 +62,20 @@
   <section id="hours" class="section">
     <div class="container">
       <h2>Horário de Funcionamento</h2>
-      <p>Estamos abertos de segunda a sábado das 18:00 às 23:00.</p>
+      <tr>
+        <th>Dias da semana</th>
+        <th>Horários</th>
+    </tr>
+    <br>
+    <tr>
+        <td>Segunda a Sexta</td>
+        <td>18:00 as 23:00</td>
+    </tr>
+    <br>
+    <tr>
+        <td>Sábado e Domingo</td>
+        <td>18:00 as 02:00</td>
+    </tr>
     </div>
   </section>
 
@@ -72,6 +83,15 @@
     <div class="container">
       <h2>Galeria de Fotos</h2>
       <div class="gallery">
+        <div class="col-sm">
+          <img src="img/predio-tombado-de-1940-em-sao-paulo-recebe-novo-restaurante-italiano_3.webp">
+        </div>
+        <div class="col-sm">
+          <img src="img/predio-tombado-de-1940-em-sao-paulo-recebe-novo-restaurante-italiano_4.webp">
+        </div>
+        <div class="col-sm">
+          <img src="img/predio-tombado-de-1940-em-sao-paulo-recebe-novo-restaurante-italiano_5.webp">
+        </div>
         <!-- Adicione aqui as fotos do restaurante -->
       </div>
     </div>
@@ -86,12 +106,24 @@
       <div id="total"></div>
       <select id="payment-method">
         <option value="cash">Dinheiro</option>
-        <option value="card">Cartão de Crédito</option>
+        <option value="card">Cartão de Crédito</option>,
+        <option value="card">Cartão de Débito</option>
       </select>
       <button onclick="checkout()">Finalizar Pedido</button>
       <button onclick="clearCart()">Limpar Carrinho</button>
     </div>
   </section>
+  
+  <section id="reservation" class="section">
+    <div class="container">
+      <h2>Reservas</h2>
+      <label for="inputDate">Digite a data da reserva:</label>
+      <input type="date" id="inputDate">
+      <button onclick="generateCalendar()">Visualizar Calendário</button>
+      <div id="calendar"></div> <!-- Container para o calendário -->
+    </div>
+  </section>
+
 
   <footer>
     <div class="container">
@@ -99,6 +131,10 @@
     </div>
   </footer>
 
+  
   <script src="script.js"></script>
 </body>
 </html>
+
+
+

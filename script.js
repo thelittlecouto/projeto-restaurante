@@ -60,7 +60,7 @@ function generateCalendar() {
 
   calendarElement.innerHTML = ''; // Limpar o conteúdo anterior do calendário
 
-  const date = new Date(selectedYear, selectedMonth, selectedDay);
+  const date = new Date(selectedYear, selectedMonth, selectedDay+1);
   const dateString = date.toLocaleDateString('pt-BR', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
 
   const dayElement = document.createElement('div');
