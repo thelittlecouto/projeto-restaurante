@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Trattoria Bella - Restaurante Italiano</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>La Trattoria Bella</h1>
+      <nav>
+        <ul>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#contact">Contato</a></li>
+          <li><a href="#hours">Horário</a></li>
+          <li><a href="#gallery">Galeria</a></li>
+          <li><a href="#order">Cardápio e Comanda</a></li>
+          <li><a href="#reservation">Reserva</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="reservation" class="section">
+    <div class="container">
+      <h2>Reserva</h2>
+      <label for="inputDate">Digite a data da reserva:</label>
+      <input type="date" id="inputDate">
+      <button onclick="generateCalendar()">Visualizar Calendário</button>
+      <div id="calendar"></div> <!-- Container para o calendário -->
+    </div>
+  </section>
+
+  <section id="menu" class="section">
+    <div class="container">
+      <h2>Menu</h2>
+      <p>Veja nossa seleção de pratos italianos autênticos.</p>
+      <div class="menu-items">
+        <div class="menu-item">
+          <h3>Spaghetti à Bolonhesa</h3>
+          <p>R$ 25.00</p>
+          <button onclick="addToCart('Spaghetti à Bolonhesa', 25)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="menu-item">
+          <h3>Pizza Margherita</h3>
+          <p>R$ 30.00</p>
+          <button onclick="addToCart('Pizza Margherita', 30)">Adicionar ao Carrinho</button>
+        </div>
+        <!-- Adicione outros itens do menu aqui -->
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contato</h2>
+      <p>Entre em contato conosco para reservas ou perguntas.</p>
+      <!-- Adicione aqui as informações de contato -->
+    </div>
+  </section>
+
+  <section id="hours" class="section">
+    <div class="container">
+      <h2>Horário de Funcionamento</h2>
+      <p>Estamos abertos de segunda a sábado das 18:00 às 23:00.</p>
+    </div>
+  </section>
+
+  <section id="gallery" class="section">
+    <div class="container">
+      <h2>Galeria de Fotos</h2>
+      <div class="gallery">
+        <!-- Adicione aqui as fotos do restaurante -->
+      </div>
+    </div>
+  </section>
+
+  <section id="order" class="section">
+    <div class="container">
+      <h2>Cardápio e Comanda Eletrônica</h2>
+      <ul id="cart"></ul>
+      <div id="subtotal"></div>
+      <div id="tax"></div>
+      <div id="total"></div>
+      <select id="payment-method">
+        <option value="cash">Dinheiro</option>
+        <option value="card">Cartão de Crédito</option>
+      </select>
+      <button onclick="checkout()">Finalizar Pedido</button>
+      <button onclick="clearCart()">Limpar Carrinho</button>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 La Trattoria Bella - Restaurante Italiano</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
