@@ -3,10 +3,20 @@ body {
   margin: 0;
   padding: 0;
 }
+.nav-link{
+  color: #fff;
+}
+.navbar-brand{
+  color: #fff;
+}
 
+.container-fluid{
+  background-color: #dc0000;
+}
 .container {
   width: 90%;
   margin: 0 auto;
+  
 }
 
 header {
@@ -24,14 +34,13 @@ nav ul {
   margin: 0;
   padding: 0;
 }
-
 nav ul li {
   display: inline;
   margin-right: 20px;
 }
 
 nav ul li a {
-  color: #fff;
+  color: rgb(54, 109, 49);
   text-decoration: none;
 }
 
@@ -46,7 +55,7 @@ nav ul li a {
 }
 
 .menu-item {
-  background-color: #fff; /* Branco */
+  background-color: rgb(102, 167, 108); /* Branco */
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
